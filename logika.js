@@ -2,6 +2,12 @@
 // ATURAN: untuk TIAP fungsi, tulis LANGKAH 1–3 sebagai komentar DULU, baru kode.
 // Pakai for...of + if. JANGAN pakai .map / .filter / .find / .reduce dulu (lihat soal.md).
 
+const daftarItem = [ {id: 1, nama: "Danau Maninjau", kategori: "Danau", tiket: 15000, buka: true },
+     { id: 2, nama: "Lembah Harau", kategori: "Air Terjun", tiket: 10000, buka: true }, 
+     { id: 3, nama: "Pantai Air Manis", kategori: "Pantai", tiket: 10000, buka: true }, 
+     { id: 4, nama: "Gunung Marapi", kategori: "Gunung", tiket: 25000, buka: false }, 
+     { id: 5, nama: "Ngarai Sianok", kategori: "Lembah", tiket: 15000, buka: true }, 
+     { id: 6, nama: "Air Terjun Lembah Anai", kategori: "Air Terjun", tiket: 10000, buka: false } ];
 console.table(daftarItem);
 
 // ─────────────────────────────────────────────
@@ -136,15 +142,15 @@ function rataRataTersedia(daftar) {
 // ─────────────────────────────────────────────
 
 // FUNGSI 1
-console.log(hitungTersedia(daftarItem));
-console.log(hitungTersedia([]));
+console.log(hitungTotal(daftarItem));
+console.log(hitungTotal([]));
 
 // FUNGSI 2
 console.log(cariBerdasarkanId(daftarItem, 3));
 console.log(cariBerdasarkanId(daftarItem, 99));
 
 // FUNGSI 3
-console.log(saringKategori(daftarItem, "alam"));
+console.log(saringKategori(daftarItem, "Pantai"));
 console.log(saringKategori(daftarItem, "sejarah"));
 
 // FUNGSI 4
