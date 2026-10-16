@@ -77,7 +77,7 @@ function cariBerdasarkanId(daftar, id) {
 // keluaran: array baru berisi item dengan kategori itu, atau array kosong [] 
 
 // LANGKAH 2 — CONTOH (termasuk kasus tepi)
-// kategori = "alam", ada item dengan kategori "alam", kembalikan array itu
+// kategori = "pantai", ada item dengan kategori "pantai", kembalikan array itu
 // kategori = "sejarah", tidak ada item dengan kategori "sejarah", kembalikan array kosong []
 
 // LANGKAH 3 — LANGKAH (pseudocode)
