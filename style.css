@@ -1,0 +1,38 @@
+/* flex untuk navigasi utama isinya hanya satu baris jadi tidak perlu grid */
+.navbar-utama {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* disini menggunakan flex karena isinya beberapa item jadi bisa diatur jaraknya dengan gap */
+.navbar-menu {
+    display: flex;
+    gap: 16px;
+    list-style: none;
+}
+
+/* daftar-kartu menggunakan grid karena grid digunakan untuk mengatur kolom */
+.daftar-kartu {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+/* menggunakan min-width karna kita mulai dari hp lalu menambah untuk layar yang lebih besar*/
+@media (min-width: 768px) {
+  .daftar-kartu {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .daftar-kartu {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.kartu-wisata {
+  border: 1px solid gray;
+  padding: 16px;
+}

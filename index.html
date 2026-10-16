@@ -2,12 +2,65 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <title>Tugas 1A — buka Console (F12)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wisata Alam</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <p>Semua hasil ada di <strong>Console</strong>: tekan F12 → tab Console.</p>
-  <!-- Jangan ubah urutan: data.js harus dimuat sebelum logika.js -->
-  <script src="data.js"></script>
-  <script src="logika.js"></script>
+  <header>
+    <nav class="navbar-utama">
+      <span>Wisata Alam</span>
+      <ul class="navbar-menu">
+        <li><a href="#daftar-wisata">Daftar Wisata</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h1>Wisata Alam</h1>
+    </section>
+
+    <section id="daftar-wisata">
+      <h2>Daftar Wisata</h2>
+      <div class="daftar-kartu">
+        <article class="kartu-wisata">
+          <h3>Danau Maninjau</h3>
+          <p>Kategori: Danau</p>
+          <p>Tiket: Rp 15.000</p>
+        </article>
+        <article class="kartu-wisata">
+          <h3>Lembah Harau</h3>
+          <p>Kategori: Air Terjun</p>
+          <p>Tiket: Rp 10.000</p>
+        </article>
+        <article class="kartu-wisata">
+          <h3>Pantai Air Manis</h3>
+          <p>Kategori: Pantai</p>
+          <p>Tiket: Rp 10.000</p>
+        </article>
+        <article class="kartu-wisata">
+          <h3>Gunung Marapi</h3>
+          <p>Kategori: Gunung</p>
+          <p>Tiket: Rp 25.000</p>
+        </article>
+        <article class="kartu-wisata">
+          <h3>Ngarai Sianok</h3>
+          <p>Kategori: Lembah</p>
+          <p>Tiket: Rp 15.000</p>
+        </article>
+        <article class="kartu-wisata">
+          <h3>Air Terjun Lembah Anai</h3>
+          <p>Kategori: Air Terjun</p>
+          <p>Tiket: Rp 10.000</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer id="kontak">
+    <p>Hubungi kami di: info@wisataalam.com</p>
+  </footer>
 </body>
-</html>
+</html>  
