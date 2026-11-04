@@ -1,8 +1,11 @@
 /* flex untuk navigasi utama isinya hanya satu baris jadi tidak perlu grid */
 .navbar-utama {
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     align-items: center;
+    background-color: #90de93;
+    padding: 8px;
+    font-size: 16px;
 }
 
 /* disini menggunakan flex karena isinya beberapa item jadi bisa diatur jaraknya dengan gap */
@@ -17,6 +20,7 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 16px;
+  margin-top: 16px;
 }
 
 /* menggunakan min-width karna kita mulai dari hp lalu menambah untuk layar yang lebih besar*/
@@ -32,7 +36,38 @@
   }
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#daftar-wisata {
+  padding: 0 64px;
+}
+
 .kartu-wisata {
   border: 1px solid gray;
   padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  background-color: #90de93;
+  color: rgb(5, 3, 3);
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+h2 {
+  margin-bottom: 16px;
+  color: #0c5b39;
+}
+
+#kontak {
+  padding: 0 64px;
+  margin-top: 32px;
 }
